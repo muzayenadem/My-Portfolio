@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply py-4 px-10  bg-orange-600 rounded-lg text-center m-5 text-white font-bold hover:opacity-80 ease-in duration-200
+}
+.title {
+ @apply font-bold text-3xl md:text-4xl leading-snug   
+}
+
+ .bolb1{
+ @apply w-80 h-80 bg-violet-400  absolute top-14 -left-5 rounded-full overflow-hidden opacity-30 blur-2xl
+  }
+  .bolb2 {
+    @apply w-80 h-80 bg-orange-600 overflow-hidden opacity-30 rounded-full bottom-0 absolute right-0 blur-2xl
+  }
+
+  .active-picture {
+    border: 2px solid orange;
+  }
+  .bannerIcon {
+    @apply w-16 h-16 bg-slate-700 rounded-2xl inline-flex text-center text-xl items-center justify-center hover:bg-opacity-40 hover:text-pink-600 transition-all hover:bg-transparent cursor-pointer duration-300
+  }
+  .active {
+    color: white;
+  }
+
+  .resumeli {
+    @apply w-full h-20 bg-slate-950 text-slate-200 flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center  rounded-none
+  } 
+  .contactInput {
+    @apply w-full h-12  rounded-lg border-b-[1px] border-b-gray-600 bg-stone-900 active:outline-none text-neutral-300 px-4 focus-visible:outline-red-950 outline-none focus-visible:border-b-transparent duration-300                    
+  }
+
+  .textareaInput {
+    @apply w-full resize-none rounded-lg border-b-[1px] border-b-gray-600 bg-stone-900 active:outline-none text-neutral-300 px-4 focus-visible:outline-red-950 outline-none focus-visible:border-b-transparent duration-300                    
+  }
+.btn {
+  @apply w-full h-12  rounded-lg border-b-[1px] border-b-gray-600 bg-stone-900 active:outline-none text-neutral-300  focus-visible:outline-red-950 outline-none focus-visible:border-b-transparent duration-300                    
+}
