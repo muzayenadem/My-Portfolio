@@ -1,8 +1,8 @@
 export const navBarLinks = [
     {
         _id:1,
-        title:'Homeeeee',
-        link:'Homeeeee'
+        title:'Home',
+        link:'Home'
     },
     {
         _id:2,
