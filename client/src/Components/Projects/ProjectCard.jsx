@@ -24,9 +24,11 @@ function ProjectCard() {
                                 <FaGithub/>
                             </span>
                                 </a>
-                            <span className=' ml-2 text-lg w-10 h-10 bg-black rounded-full inline-flex text-slate-300  justify-center  items-center hover:text-rose-800 duration-300'>
+                              <a href='https://ezasco.vercel.app'>
+                                <span className=' ml-2 text-lg w-10 h-10 bg-black rounded-full inline-flex text-slate-300  justify-center  items-center hover:text-rose-800 duration-300'>
                                 <FaFirefoxBrowser/>
                             </span>
+                              </a>
                          </div>
                         </div>
                         <div>
