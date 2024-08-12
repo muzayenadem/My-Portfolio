@@ -36,15 +36,21 @@ function Banner() {
             <div className='flex  flex-col gap-5'>
                 <h2>FIND ME IN</h2>
                 <div className='flex flex-wrap justify-between gap-3'>
+                    <a href='https://www.facebook.com/muzayen.adem.9/'>
                     <span className='bannerIcon'>
                         <FaFacebookF/>
                     </span>
+                    </a>
+                    <a href='https://x.com/MuzayenAdem123'>
                     <span className='bannerIcon'>
                         <FaTwitter/>
                     </span>
+                    </a>
+                    <a href='https://www.linkedin.com/in/muzyn-adem-593a83240/'>
                     <span className='bannerIcon'>
-                        <FaLinkedin/>
+                    <FaLinkedin/>
                     </span>
+                    </a>
                 </div>
             </div>
             <div className='flex flex-col gap-5'>

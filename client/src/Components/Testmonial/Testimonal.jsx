@@ -95,8 +95,8 @@ function Testimonal() {
                         className='h-72 object-cover rounded-lg'
                         src={testimonial1}></img>
                         <div className='ml-[20%] md:ml-0'>
-                            <p className='text-sm text-red-800 mb-2'>from somewhere</p>
-                            <h1 className=' font-bold text-2xl'>Muzayen Adem</h1>
+                            <p className='text-sm text-red-800 mb-2'>from Canada</p>
+                            <h1 className=' font-bold text-2xl'>Aiden Lockhart</h1>
                             <p className='text-base tracking-wide text-gray-500 '>Opperation officer</p>
                         </div>
                       </div>
@@ -106,7 +106,7 @@ function Testimonal() {
                             <div className=' flex justify-between border-b-[1px] border-b-black p-5 '>
                                 <div>
                                    <h1 className='font-bold text-2xl'>Travel Mobile   App Design</h1>
-                                   <p  className=' text-gray-400 mt-2'>Via Upwor Mar 4, 2015 - Aug 30, 2021 test</p>
+                                   <p  className=' text-gray-400 mt-2'>Via Upwor March 4, 2015 - Aug 30, 2022 test</p>
                                 </div>
                                 <span className='text-xl font-bold text-orange-600 flex'><RiStarFill/><RiStarFill/><RiStarFill/><RiStarFill/><RiStarFill/></span>
                             </div>
@@ -124,9 +124,9 @@ function Testimonal() {
                         className='h-72 object-cover rounded-lg'
                         src={testimonial2}></img>
                         <div className='ml-[20%] md:ml-0'>
-                            <p className='text-sm text-red-800 mb-2'>from somewhere</p>
-                            <h1 className=' font-bold text-2xl'>Muzayen Adem</h1>
-                            <p className='text-base tracking-wide text-gray-500 '>Opperation officer</p>
+                            <p className='text-sm text-red-800 mb-2'>from German</p>
+                            <h1 className=' font-bold text-2xl'>Mason Whitaker</h1>
+                            <p className='text-base tracking-wide text-gray-500 '>Manager</p>
                         </div>
                       </div>
                       <div className=' h-full bg-neutral-800  flex  flex-wrap-reverse md:flex-col'>
@@ -135,12 +135,12 @@ function Testimonal() {
                             <div className=' flex justify-between border-b-[1px] border-b-black p-5 '>
                                 <div>
                                    <h1 className='font-bold text-2xl'>Travel Mobile   App Design</h1>
-                                   <p  className=' text-gray-400 mt-2'>Via Upwor Mar 4, 2015 - Aug 30, 2021 test</p>
+                                   <p  className=' text-gray-400 mt-2'>Via Fiverr May 4, 2015 - July 27, 2023 test</p>
                                 </div>
                                 <span className='text-xl font-bold text-orange-600 flex'><RiStarFill/><RiStarFill/><RiStarFill/><RiStarFill/><RiStarFill/></span>
                             </div>
                             <div className=' mt-3  '>
-                            <p  className='text-sm text-gray-400'>Yes, talking to random people online is OK as long as you do so safely. Talking to strangers can be a way to meet new friends and learn about different cultures and perspectives. However, always be cautious about the information you give, and remember that not everyone online may have good intentions.</p>
+                            <p  className='text-sm text-gray-400'>Engaging with strangers online is fine, provided you do so with caution. It can be an opportunity to make new friends and gain insights into various cultures and viewpoints. However, it's important to be careful about the information you share, as not everyone you encounter online may have positive intentions.</p>
                             </div>
                         </div>
                       </div>
@@ -153,9 +153,9 @@ function Testimonal() {
                         className='h-72 object-cover rounded-lg'
                         src={testimonial3}></img>
                         <div className='ml-[20%] md:ml-0'>
-                            <p className='text-sm text-red-800 mb-2'>from somewhere</p>
-                            <h1 className=' font-bold text-2xl'>Muzayen Adem</h1>
-                            <p className='text-base tracking-wide text-gray-500 '>Opperation officer</p>
+                            <p className='text-sm text-red-800 mb-2'>from Australia</p>
+                            <h1 className=' font-bold text-2xl'>Ethan Caldwell</h1>
+                            <p className='text-base tracking-wide text-gray-500 '>Manager</p>
                         </div>
                       </div>
                       <div className=' h-full bg-neutral-800  flex  flex-wrap-reverse md:flex-col'>
@@ -164,12 +164,12 @@ function Testimonal() {
                             <div className=' flex justify-between border-b-[1px] border-b-black p-5 '>
                                 <div>
                                    <h1 className='font-bold text-2xl'>Travel Mobile   App Design</h1>
-                                   <p  className=' text-gray-400 mt-2'>Via Upwor Mar 4, 2015 - Aug 30, 2021 test</p>
+                                   <p  className=' text-gray-400 mt-2'>Via Fiverr Sep 4, 2017 - Oct  5, 2024 test</p>
                                 </div>
                                 <span className='text-xl font-bold text-orange-600 flex'><RiStarFill/><RiStarFill/><RiStarFill/><RiStarFill/><RiStarFill/></span>
                             </div>
                             <div className=' mt-3  '>
-                            <p  className='text-sm text-gray-400'>Yes, talking to random people online is OK as long as you do so safely. Talking to strangers can be a way to meet new friends and learn about different cultures and perspectives. However, always be cautious about the information you give, and remember that not everyone online may have good intentions.</p>
+                            <p  className='text-sm text-gray-400'>Interacting with strangers on the internet can be an enriching experience, offering opportunities to make new friends and discover various cultures. However, it's crucial to remain vigilant about the information you share, as not everyone online may have positive intentions.</p>
                             </div>
                         </div>
                       </div>

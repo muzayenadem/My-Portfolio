@@ -17,15 +17,19 @@ function Footer() {
                   <div className='flex flex-wrap justify-center gap-3 mt-3'>
                     <a href='https://www.facebook.com/muzayen.adem.9/'>
                     <span className='bannerIcon'>
-                    <FaFacebookF/>
-                   </span>
+                      <FaFacebookF/>
+                    </span>
                     </a>
-                   <span className='bannerIcon'>
-                    <FaTwitter/>
-                   </span>
-                  <span className='bannerIcon'>
-                 <FaLinkedin/>
-                </span>
+                    <a href='https://x.com/MuzayenAdem123'>
+                    <span className='bannerIcon'>
+                      <FaTwitter/>
+                  </span>
+                    </a>
+                    <a href='https://www.linkedin.com/in/muzyn-adem-593a83240/'>
+                    <span className='bannerIcon'>
+                    <FaLinkedin/>
+                    </span>
+                    </a>
                </div>
             </div>
                 <div className='flex flex-col justify-center  items-center gap-4'>

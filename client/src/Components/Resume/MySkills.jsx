@@ -9,14 +9,14 @@ function MySkills() {
                 <h4 className=' text-red-600'>2019 - 2024</h4>
                 <h1 className='font-bold text-4xl '>Design Quality</h1>
               <div className='mt-6'>
-              <SkillsPercent/>
+              <SkillsPercent skills={skills1}/>
               </div> 
             </div>
             <div>
             <h4 className=' text-red-600'>2019 - 2024</h4>
                 <h1 className='font-bold text-4xl '>Development Quality</h1>
             <div className=' mt-6'>
-                <SkillsPercent/>
+                <SkillsPercent skills={skills2}/>
              </div>
             </div>
           </div>
@@ -25,3 +25,55 @@ function MySkills() {
 }
 
 export default MySkills
+const skills1 = [
+  {
+  title:'Javascript',
+  percent:98
+  },
+  {
+  title:'Express',
+  percent:95
+  },
+  {
+  title:'React',
+  percent:97
+  },
+  {
+  title:'Node',
+  percent:90
+  },
+  {
+  title:'Mongodb',
+  percent:88
+  },
+    {
+  title:'python',
+  percent:85
+  },
+]
+const skills2 = [
+  {
+  title:'Html',
+  percent:96
+  },
+  {
+  title:'Firebase',
+  percent:85
+  },
+  {
+  title:'Redux',
+  percent:90
+  },
+  {
+  title:'JsowWebToken ',
+  percent:84
+  },
+  {
+  title:'Tailwind css',
+  percent:86
+  },
+    {
+  title:'Material ui',
+  percent:75
+  },
+]

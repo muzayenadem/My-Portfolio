@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ResumeCard() {
+function ResumeCard({educational}) {
   return (
     <>
      {
@@ -33,24 +33,3 @@ function ResumeCard() {
 }
 
 export default ResumeCard
-
-const educational = [
-    {
-     title:'Bs C construction Management',
-     subtitle:'University of Wachemo (2019 - 2024)',
-     result:"3.7/4",
-     des:'i have learned construction technology management at wachemo university with high quality performance' 
-    }, {
-        title:'Bs C construction Management',
-        subtitle:'University of Wachemo (2019 - 2024)',
-        result:"3.7/4",
-        des:'i have learned construction technology management at wachemo university with high quality performance' 
-       },
-       {
-        title:'Bs C construction Management',
-        subtitle:'University of Wachemo (2019 - 2024)',
-        result:"3.7/4",
-        des:'i have learned construction technology management at wachemo university with high quality performance' 
-       },
-
-  ]

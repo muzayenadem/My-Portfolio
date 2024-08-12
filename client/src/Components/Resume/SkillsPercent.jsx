@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-function SkillsPercent() {
+function SkillsPercent({skills}) {
   return (
     <>
     {
@@ -13,7 +13,8 @@ function SkillsPercent() {
                     initial={{x:-100, opacity:0}}
                     animate={{x:0, opacity:1}}
                     transition={{duration:0.5, delay:0.5}}
-                    className={`w-[${percent}%] h-2 bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 relative`}>
+                    style={{width:`${percent}%`}}
+                    className={` h-2 bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 relative`}>
                         <span className={`absolute -top-7 right-0`}>{percent}%</span>
                     </motion.span>
                   </span>
@@ -28,30 +29,3 @@ function SkillsPercent() {
 export default SkillsPercent
 
 
-
-const skills = [
-    {
-    title:'Fotoshop',
-    percent:100
-    },
-    {
-    title:'Fotoshop',
-    percent:90
-    },
-    {
-    title:'Fotoshop',
-    percent:40
-    },
-    {
-    title:'Fotoshop',
-    percent:95
-    },
-    {
-    title:'Fotoshop',
-    percent:60
-    },
-      {
-    title:'Fotoshop',
-    percent:80
-    },
-]
