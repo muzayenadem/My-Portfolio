@@ -27,6 +27,9 @@
   }
 
   .resumeli {
+    @apply w-full h-20 bg-neutral-600 text-slate-200 flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center  rounded-none
+  } 
+  .noresumeli {
     @apply w-full h-20 bg-slate-950 text-slate-200 flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center  rounded-none
   } 
   .contactInput {

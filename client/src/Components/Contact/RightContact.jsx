@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import axios from 'axios'
 function RightContact() {
     const [name, setName] = useState("")
     const [phone, setPhone] = useState("")
@@ -7,7 +7,7 @@ function RightContact() {
     const [subject, setSubject] = useState("")
     const [Message, setMessage] = useState("")
     const [errMessage, setErrMessage] = useState('')
-    const sendHandler = (e) =>{
+    const sendHandler = async (e) =>{
       e.preventDefault()
       if(name == ""){
         setErrMessage('Name is Required!')
@@ -25,13 +25,20 @@ function RightContact() {
         setErrMessage("Message is Required!")
       }
       else{
-        setErrMessage("Your message has been sent successfully")
         setEmail('')
         setName('')
         setPhone('')
         setMessage('')
         setSubject
         console.log(name,email,phone,subject, Message)
+
+        await axios.post('http://localhost:4000/send-email',{name,phone,email,subject,Message})
+        .then((res)=>{
+          setErrMessage(res.data)
+        })
+        .catch((err)=>{
+          setErrMessage(err.message)
+        })
         setTimeout(() => {
           setErrMessage("")
         }, 3000);
@@ -41,7 +48,7 @@ function RightContact() {
     <div className=' md:w-[65%]  py-10 gap-8 p-8 rounded-lg flex  flex-wrap-reverse md:flex-col shadow-lg shadow-black'>
     <form className='w-[96%] shadow-lg shadow-black p-4'>
         {
-          errMessage && <p className={`py-3 bg-neutral-900 shadow-lg shadow-slate-700 text-center animate-bounce ${errMessage == 'Your message has been sent successfully' ? 'text-green-900':' text-orange-700'} text-base mb-4 `}>{errMessage}</p>
+          errMessage && <p className={`py-3 bg-neutral-900 shadow-lg shadow-slate-700 text-center animate-bounce ${errMessage == 'Your message has been sent successfully' ? 'text-green-500':' text-orange-700'} text-base mb-4 `}>{errMessage}</p>
         }
       <div className='flex justify-between flex-wrap gap-10'>
         <div className=' md:w-[45%] flex justify-start items-start gap-3 flex-col'>
@@ -85,7 +92,7 @@ function RightContact() {
         className=' w-full h-12  rounded-lg border-b-[1px] border-b-gray-600 bg-stone-900 active:outline-none text-neutral-300 hover:bg-indigo-950  focus-visible:outline-red-950 outline-none focus-visible:border-b-transparent duration-300                    '>Send Message</button>
         </div>
         {
-          errMessage && <p className={`py-3 bg-neutral-900 shadow-lg shadow-slate-700 text-center animate-bounce ${errMessage == 'Your message has been sent successfully' ? 'text-green-900':' text-orange-700'} text-base mt-4 `}>{errMessage}</p>
+          errMessage && <p className={`py-3 bg-neutral-900 shadow-lg shadow-slate-700 text-center animate-bounce ${errMessage == 'Your message has been sent successfully' ? 'text-green-500':' text-orange-700'} text-base mt-4 `}>{errMessage}</p>
         }
     </form>
   </div>

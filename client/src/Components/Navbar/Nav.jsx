@@ -7,7 +7,7 @@ function Nav() {
   const [open,setOpen] = useState(false)
   console.log(navBarLinks)
   return (
-    <div className='flex flex-wrap justify-between border-b-2 bg-stone-900 p-1 rounded-b-2xl sticky z-10 bg top-0 left-0'>
+    <div className='flex flex-wrap justify-between border-b-2 bg-stone-900 p-1 rounded-b-2xl sticky z-10 bg top-0 left-0' style={{zIndex:1}}>
       <div className='ml-5'>
       <img src={profile} className=' rounded-full w-14 h-14 '/>
       </div>

@@ -12,7 +12,7 @@ function ResumeCard({educational}) {
                         <span className='w-3 h-3 bg-black rounded-full  inline-flex group-hover:bg-red-600 duration-300'></span>
                     </span>
                    </div>
-                   <div className='w-full bg-black bg-opacity-20 hover:bg-opacity-30 duration-300 rounded-lg px-10 flex flex-col justify-center gap-10 shadow-xl shadow-slate-700'>
+                   <div className='w-full bg-black bg-opacity-20  hover:bg-opacity-30 duration-300 rounded-lg px-10 flex flex-col justify-center gap-10 shadow-xl shadow-slate-700'>
                     <div className='flex justify-between '>
                         <div>
                             <h3 className='text-2xl font-semibold text-slate-300 group-hover:text-white duration-300'>{title}</h3>

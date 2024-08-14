@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import ResumeCard from './ResumeCard'
+import AchaivmentCard from './AchaivmentCard'
 function Achaivement() {
   return (
     <motion.div initial={{opacity:0}} animate={{opacity:1, transition:{duration:1}}} className='py-12'>
@@ -8,15 +9,15 @@ function Achaivement() {
             <div>
                 <h4 className=' text-red-600'>2019 - 2024</h4>
                 <h1 className='font-bold text-4xl '>Achaivement Quality</h1>
-              <div className='flex flex-col mt-6 gap-6 border-l-[3px] h-[1000px] border-red-500 '>
-                 <ResumeCard educational={educational1}  />
+              <div className='flex flex-col mt-6 gap-6 border-l-[3px]  border-red-500 '>
+                 <AchaivmentCard achaivment={achaivment1}/>
               </div> 
             </div>
             <div>
             <h4 className=' text-red-600'>2019 - 2024</h4>
                 <h1 className='font-bold text-4xl '>Achaivement Quality</h1>
-            <div className='flex flex-col mt-6 gap-6 border-l-[3px] h-[1000px] border-red-500 '>
-          <ResumeCard educational={educational2} />
+            <div className='flex flex-col mt-6 gap-6 border-l-[3px]  border-red-500 '>
+            <AchaivmentCard achaivment={achaivment2}/>
     </div>
             </div>
           </div>
@@ -26,43 +27,31 @@ function Achaivement() {
 
 export default Achaivement
 
-const educational1 = [
-  {
-   title:'grade 1 - 8',
-   subtitle:'Kechema elemantary school (2008 - 2015)',
-   result:"95",
-   des:'I completed my education from grades 1 to 8 at Kechema Elementary School.' 
-  }, {
-      title:'Secondary high school 9-10',
-      subtitle:'Dodola secondary school (2016 - 2017)',
-      result:"3.2/4",
-      des:'I attended Dodola Secondary School from grades 9 to 10.' 
+const achaivment1 = [
+      {
+      title:'Launched a Successful Web Application',
+      des:'I Built and launched an e-commerce platform that gained 10,000 users in the first month.' 
+      }, {
+      title:'Enhanced Code Quality',
+      des:'I mplemented code reviews and automated testing, reducing bugs by 40%.' 
      },
      {
-      title:'Preparatory 11-12',
-      subtitle:'Hawiko preparatory school (2019 - 2024)',
-      result:"442/600",
-      des:'I studied at Hawiko Academy Preparatory School for 11 - 12.' 
+      title:'Developed a Secure Login System',
+      des:'I Created a custom authentication system using JWT, improving user security and reducing support issues.' 
      },
 
 ]
 
-const educational2 = [
+const achaivment2 = [
   {
-    title:'Bs.C construction Management',
-    subtitle:'University of Wachemo (2019 - 2024)',
-    result:"3.7/4",
-    des:'I studied Construction Technology Management at Wachemo University, achieving high-quality performance.' 
+    title:'Automated Data Backup',
+    des:'I Set up automated backups for a database, ensuring data security and recovery.' 
    },
-  {
-   title:'Responsive Website Basics: Code w ith HTML, CSS,and JavaScript',
-   subtitle:'University Of London On Coursera (2023)',
-   result:"91",
-   des:'i have educated from 1- 8 at kechema elemantary school' 
-  }, {
-      title:'React Basics',
-      subtitle:'I comleted From Meta On Coursera (2023)',
-      result:"94",
-      des:'i have learned construction technology management at wachemo university with high quality performance' 
+    {
+    title:'Implemented Real-Time Features',
+    des:'I Added real-time notifications and updates, enhancing user interaction.' 
+    }, {
+      title:'Integrated Payment Gateway',
+      des:'I Successfully integrated a payment gateway, enabling seamless online transactions.' 
      },
 ]

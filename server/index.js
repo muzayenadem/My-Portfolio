@@ -1,30 +1,24 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-// const app = express()
 
-// app.get('/',(req,res)=>{
-//     res.status(200).send('Hello wrold')
-// })
-// app.get('/rahmaan',(req,res)=>{
-//     res.send('yaa rabbi naaf laaffisi waan hundaa')
-// })
+const cors = require('cors')
+const express = require('express');
+const bodyParser = require('body-parser');
 
-// app.listen(4444,()=>{
-//     console.log('susseed')
-// })
-
-const cors = require('cors');
-const router = require('./routes/api')
 const app = express();
-const PORT = process.env.PORT || 5000;
+//const PORT = process.env.PORT || 3000;
+const PORT = 4000
 
-// Middleware
-app.use(cors());
+// Middleware to parse JSON data
 app.use(bodyParser.json());
-///Test Route
-// API Routes
-app.use(router);
+app.use(cors())
+app.post('/send-email', (req, res) => {
+    try {
+        const { name, phone, email, subject, message } = req.body;
+        res.status(200).send('Your message has been sent successfully')
+    } catch (error) {
+        res.status(500).send(error.message)
+    }
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
-  });
+});
