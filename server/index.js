@@ -52,6 +52,7 @@ app.use(cors())
 app.post('/send-email', async (req, res) => {
     try {
         const { name, phone, email, subject, message } = req.body;
+        console.log(email)
         const assure_email = assureEmail(email)
         if(!assure_email)
             return res.status(401).json({"error":"invalid email"})
