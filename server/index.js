@@ -58,7 +58,7 @@ app.post('/send-email', async (req, res) => {
 
         try {
             await sendWelcomeEmail(email);
-            return res.status.(200).json({ success: true, message: "Confirmation email sent!" });
+            return res.status(200).json({ success: true, message: "Confirmation email sent!" });
           } catch (error) {
             res.status(500).json({ 
               error: "Failed to send email",
