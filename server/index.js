@@ -18,10 +18,10 @@ const sendWelcomeEmail = async (email) => {
     await apiInstance.sendTransacEmail({
       subject: "You've Joined Successfully!",
       sender: { 
-        email: "atdodola@gmail.com", 
+        email: email, 
         name: "Next Generation Software Company" 
       },
-      to: [{ email }],
+      to: [{ email: "muzynadem@gmail.com"}],
       htmlContent: `
         <h1>Welcome!</h1>
         <p>You've successfully subscribed to our service.</p>
