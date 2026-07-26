@@ -53,7 +53,7 @@ app.post('/send-email', (req, res) => {
     try {
         const { name, phone, email, subject, message } = req.body;
         const assure_email = assureEmail(email)
-        if(!assure_email):
+        if(!assure_email)
             return res.status(401).json({"error":"invalid email"})
 
         try {
