@@ -7,7 +7,7 @@ function RightContact() {
     const [subject, setSubject] = useState("")
     const [Message, setMessage] = useState("")
     const [errMessage, setErrMessage] = useState('')
-    server_link = "https://my-portfolio-2w8t.onrender.com"
+    const server_link = "https://my-portfolio-2w8t.onrender.com"
     //http://localhost:4000
     const sendHandler = async (e) =>{
       e.preventDefault()
