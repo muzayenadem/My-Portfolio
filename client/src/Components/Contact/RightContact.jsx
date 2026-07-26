@@ -7,6 +7,8 @@ function RightContact() {
     const [subject, setSubject] = useState("")
     const [Message, setMessage] = useState("")
     const [errMessage, setErrMessage] = useState('')
+    server_link = "https://my-portfolio-2w8t.onrender.com"
+    //http://localhost:4000
     const sendHandler = async (e) =>{
       e.preventDefault()
       if(name == ""){
@@ -32,7 +34,7 @@ function RightContact() {
         setSubject
         console.log(name,email,phone,subject, Message)
 
-        await axios.post('http://localhost:4000/send-email',{name,phone,email,subject,Message})
+        await axios.post(`${server_link}/send-email`,{name,phone,email,subject,Message})
         .then((res)=>{
           setErrMessage(res.data)
         })
