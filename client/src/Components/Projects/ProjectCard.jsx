@@ -54,10 +54,10 @@ const projects = [
         gitgubLink:'https://github.com/muzayenadem/GoFind'
     },
     {
-        title:'EzasCo Eccommercer',
-        des:"this eccommerce project helps people to buy the product and they can send each other message as a additional feuture",
+        title:'Dodola Official Website',
+        des:"Dodola Official website is the web that holds all essential thing those needs one smart city",
         img:ezasco,
-        webLink:'https://ezasco.vercel.app',
+        webLink:'https://dodola-official-websitq¡.vercel.app',
         gitgubLink:'https://github.com/muzayenadem/Ecommerce'
     },
     {
