@@ -49,7 +49,7 @@ function assureEmail(email) {
 // Middleware to parse JSON data
 app.use(bodyParser.json());
 app.use(cors())
-app.post('/send-email', (req, res) => {
+app.post('/send-email', async (req, res) => {
     try {
         const { name, phone, email, subject, message } = req.body;
         const assure_email = assureEmail(email)
