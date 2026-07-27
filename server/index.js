@@ -14,92 +14,78 @@ const customer_html = (data) =>{
   <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You for Reaching Out</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Thank You</title>
 </head>
-<body style="margin: 0; padding: 0; background-color: #f4f5f7; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; width: 100% !important;">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f4f5f7; padding: 40px 10px;">
-    <tr>
-      <td align="center">
-        <!-- Main Card Container -->
-        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; background-color: #ffffff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); overflow: hidden;">
-          
-          <!-- Top Accent Bar -->
-          <tr>
-            <td height="6" style="background: linear-gradient(90deg, #6366f1, #3b82f6);"></td>
-          </tr>
-          
-          <!-- Body Content -->
-          <tr>
-            <td style="padding: 40px 30px; text-align: center;">
-              <!-- Icon/Logo Placeholder -->
-              <div style="font-size: 48px; margin-bottom: 20px; line-height: 1;">✉️</div>
+<body style="margin:0;background:#eef2ff;font-family:Arial,sans-serif;">
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="padding:40px 10px;background:#eef2ff;">
+<tr><td align="center">
+<table role="presentation" width="600" cellspacing="0" cellpadding="0" style="max-width:600px;background:#fff;border-radius:18px;overflow:hidden;">
+<tr><td style="background:linear-gradient(90deg,#4f46e5,#2563eb);padding:34px;text-align:center;">
+<div style="width:72px;height:72px;border-radius:50%;background:#fff;color:#2563eb;line-height:72px;font-size:34px;margin:auto;">✉</div>
+<h1 style="margin:18px 0 8px;color:#fff;">Message Received!</h1>
+<p style="margin:0;color:#e5e7eb;">Thank you for contacting me.</p>
+</td></tr>
 
-              <strong>Muzeyan Adem</strong><br>Full-Stack Developer (MERN)<br>Backend & AI Developer
-              
-              <h1 style="color: #1f2937; font-size: 24px; font-weight: 700; margin: 0 0 12px 0; line-height: 1.3;">
-                Thank You for Reaching Out!
-              </h1>
-              
-              <p style="color: #4b5563; font-size: 16px; line-height: 1.6; margin: 0 0 24px 0;">
-                Hi ${data.name}! Thanks for visiting my portfolio and sending over a message. I have successfully received your note and will review it as soon as possible.
-              </p>
-              
-              <!-- Timeline Callout Box -->
-              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f8fafc; border-radius: 8px; margin-bottom: 30px;">
-                <tr>
-                  <td style="padding: 16px; text-align: center; color: #6366f1; font-size: 15px; font-weight: 600;">
-                    ⏱️ Expected Response Time: Within 24–48 Hours
-                  </td>
-                </tr>
-              </table>
-              
-              <!-- Primary Action Button -->
-              <table border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
-                <tr>
-                  <td align="center" style="border-radius: 6px; background-color: #6366f1;">
-                    <a href="https://my-portfolio-frontend-bice.vercel.app/" target="_blank" style="display: inline-block; padding: 14px 28px; font-size: 15px; font-weight: 600; color: #ffffff; text-decoration: none; border-radius: 6px;">
-                      Return to Portfolio
-                    </a>
-                  </td>
-                </tr>
-              </table>
-              
-            </td>
-          </tr>
-          
-          <!-- Divider -->
-          <tr>
-            <td style="padding: 0 30px;">
-              <div style="border-top: 1px solid #e5e7eb; height: 1px; width: 100%;"></div>
-            </td>
-          </tr>
-          
-          <!-- Footer -->
-          <tr>
-            <td style="padding: 30px; text-align: center; background-color: #fafafa;">
-              <p style="color: #9ca3af; font-size: 13px; margin: 0 0 12px 0; line-height: 1.4;">
-                Let's connect across the web:
-              </p>
-              
-              <!-- Social / Developer Links -->
-              <p style="margin: 0; font-size: 14px;">
-                <a href="https://github.com/muzayenadem" target="_blank" style="color: #4b5563; text-decoration: none; font-weight: 500; margin: 0 8px;">GitHub</a> •
-                <a href="https://linkedin.com" target="_blank" style="color: #4b5563; text-decoration: none; font-weight: 500; margin: 0 8px;">LinkedIn</a> •
-                <a href="https://twitter.com" target="_blank" style="color: #4b5563; text-decoration: none; font-weight: 500; margin: 0 8px;">Twitter</a>
-              </p>
-              
-              <p style="color: #cbd5e1; font-size: 12px; margin: 20px 0 0 0;">
-                © 2026 Muzeyan Adem. All rights reserved.
-              </p>
-            </td>
-          </tr>
-          
-        </table>
-      </td>
-    </tr>
-  </table>
+<tr><td style="padding:40px;">
+<p style="font-size:18px;color:#111827;">Hi <strong>${data.name}</strong>,</p>
+
+<p style="color:#4b5563;line-height:1.8;">
+Thank you for reaching out through my portfolio website. Your message has been successfully received.
+I'll carefully review it and get back to you as soon as possible.
+</p>
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#f8fafc;border-left:5px solid #2563eb;border-radius:10px;margin:28px 0;">
+<tr><td style="padding:18px;">
+<strong style="color:#2563eb;">⏱ Expected Response</strong><br>
+<span style="color:#6b7280;">Within 24–48 hours.</span>
+</td></tr>
+</table>
+
+<table width="100%" cellpadding="12" cellspacing="0">
+<tr>
+<td width="33%" style="border:1px solid #e5e7eb;border-radius:12px;text-align:center;">
+<div style="font-size:30px;">💻</div>
+<b>Full-Stack</b><br><span style="font-size:13px;color:#6b7280;">Modern MERN apps</span>
+</td>
+<td width="4%"></td>
+<td width="33%" style="border:1px solid #e5e7eb;border-radius:12px;text-align:center;">
+<div style="font-size:30px;">⚙️</div>
+<b>Backend APIs</b><br><span style="font-size:13px;color:#6b7280;">Node.js & Express</span>
+</td>
+<td width="4%"></td>
+<td width="33%" style="border:1px solid #e5e7eb;border-radius:12px;text-align:center;">
+<div style="font-size:30px;">🤖</div>
+<b>AI</b><br><span style="font-size:13px;color:#6b7280;">GenAI & Python</span>
+</td>
+</tr>
+</table>
+
+<div style="text-align:center;margin:36px 0;">
+<a href="https://my-portfolio-frontend-bice.vercel.app/" style="background:#2563eb;color:#fff;text-decoration:none;padding:15px 34px;border-radius:30px;font-weight:bold;display:inline-block;">Visit My Portfolio</a>
+</div>
+
+<hr style="border:none;border-top:1px solid #e5e7eb;">
+
+<p style="text-align:center;font-size:20px;font-weight:bold;color:#111827;">Muzeyan Adem</p>
+<p style="text-align:center;color:#6b7280;margin-top:-10px;">Full-Stack (MERN) • Backend • AI Developer</p>
+
+<p style="text-align:center;">
+<a href="https://github.com/muzayenadem">GitHub</a> •
+<a href="https://linkedin.com">LinkedIn</a> •
+<a href="mailto:muzynadem@gmail.com">Email</a>
+</p>
+
+<p style="text-align:center;font-size:12px;color:#9ca3af;">
+This is an automated confirmation email. No reply is required.<br><br>
+© 2026 Muzeyan Adem. All rights reserved.
+</p>
+
+</td></tr>
+</table>
+</td></tr>
+</table>
 </body>
 </html>
 `
