@@ -24,12 +24,7 @@ const customer_html = (data) =>{
 <table role="presentation" width="600" cellspacing="0" cellpadding="0" style="max-width:600px;background:#fff;border-radius:18px;overflow:hidden;">
 <tr><td style="background:linear-gradient(90deg,#4f46e5,#2563eb);padding:34px;text-align:center;">
 <div style="width:72px;height:72px;border-radius:50%;background-image: src("https://res.cloudinary.com/dtmtgaepv/image/upload/v1785163289/Contents_image/ksin6pxfcnjtruf2x8as.jpg");color:#2563eb;line-height:72px;font-size:34px;margin:auto;">
-  <img
-    src="https://res.cloudinary.com/dtmtgaepv/image/upload/v1785163289/Contents_image/ksin6pxfcnjtruf2x8as.jpg"
-    alt="Muzeyan Adem Logo"
-    width="100"
-    style="display:block; border-radius: 50%; margin:0 auto;"
-    >
+
 </div>
 <h1 style="margin:18px 0 8px;color:#fff;">Message Received!</h1>
 <p style="margin:0;color:#e5e7eb;">Thank you for contacting me.</p>
