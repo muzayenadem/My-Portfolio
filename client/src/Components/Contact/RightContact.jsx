@@ -66,8 +66,9 @@ function RightContact() {
           error.message ||
           "Something went wrong."
       );
+      setLoading(false)
     } finally {
-      setLoading(true)
+      setLoading(false)
       setTimeout(() => {
         setErrMessage("");
         setSuccessMessage("");
