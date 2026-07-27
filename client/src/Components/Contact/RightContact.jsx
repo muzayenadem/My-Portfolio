@@ -11,19 +11,19 @@ function RightContact() {
     //http://localhost:4000
     const sendHandler = async (e) =>{
       e.preventDefault()
-      if(name == ""){
+      if(!name){
         setErrMessage('Name is Required!')
       }
-      else if(phone ==""){
+      else if(!phone){
         setErrMessage("Phone is Required!")
       }
-      else if(email ==""){
+      else if(!email){
         setErrMessage("Email is Required!")
       }
-      else if(subject ==""){
+      else if(!subject){
         setErrMessage("Subject is Required!")
       }
-      else if(Message ==""){
+      else if(!Message){
         setErrMessage("Message is Required!")
       }
       else{
@@ -33,18 +33,14 @@ function RightContact() {
         setMessage('')
         setSubject
         console.log(name,email,phone,subject, Message)
-
-        await axios.post(`${server_link}/send-email`,{name,phone,email,subject,Message})
-        .then((res)=>{
-          setErrMessage(res.data)
-        })
-        .catch((err)=>{
-          setErrMessage(err.message)
-        })
-        setTimeout(() => {
-          setErrMessage("")
-        }, 3000);
-      }
+        try{
+            const response = await axios.post(`${server_link}/send-email`,{name,phone,email,subject,Message})
+        } catch (error){
+            setErrMessage(error.message)
+            setTimeout(() => {
+            setErrMessage("")
+            }, 3000);
+        }  
     }
   return (
     <div className=' md:w-[65%]  py-10 gap-8 p-8 rounded-lg flex  flex-wrap-reverse md:flex-col shadow-lg shadow-black'>
