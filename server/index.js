@@ -28,7 +28,7 @@ const customer_html = (data) =>{
     src="https://res.cloudinary.com/dtmtgaepv/image/upload/v1785163289/Contents_image/ksin6pxfcnjtruf2x8as.jpg"
     alt="Muzeyan Adem Logo"
     width="100"
-    style="display:block; margin:0 auto;"
+    style="display:block; border-radius: 50%; margin:0 auto;"
     >
 </div>
 <h1 style="margin:18px 0 8px;color:#fff;">Message Received!</h1>
