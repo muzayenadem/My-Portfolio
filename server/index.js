@@ -1,4 +1,4 @@
-const cors = require('cors')
+⁸const cors = require('cors')
 const express = require('express');
 const bodyParser = require('body-parser');
 const brevo = require('@getbrevo/brevo');
@@ -9,7 +9,8 @@ const app = express();
 //const PORT = process.env.PORT || 3000;
 const PORT = 4000
 
-const customer_html = `
+const customer_html = (data) =>{
+  return `
   <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +41,7 @@ const customer_html = `
               </h1>
               
               <p style="color: #4b5563; font-size: 16px; line-height: 1.6; margin: 0 0 24px 0;">
-                Hi there! Thanks for visiting my portfolio and sending over a message. I have successfully received your note and will review it as soon as possible.
+                Hi ${data.name}! Thanks for visiting my portfolio and sending over a message. I have successfully received your note and will review it as soon as possible.
               </p>
               
               <!-- Timeline Callout Box -->
@@ -128,7 +129,7 @@ const send_to_me = async (data) => {
 };
 
 
-const send_to_customer = async (email) => {
+const send_to_customer async(data)=> {
   try {
     await apiInstance.sendTransacEmail({
       subject: "Your message successfully reached us !",
@@ -136,11 +137,11 @@ const send_to_customer = async (email) => {
         email: process.env.EMAIL, 
         name: "Next Generation Software Company" 
       },
-      to: [{email}],
+      to: [{email: data.email}],
       htmlContent: customer_html,
       textContent: "Thanks for contacting us!",
     });
-    console.log(`Email sent to ${email}`);
+    console.log(`Email sent to ${data.email}`);
   } catch (error) {
     console.error("Brevo Error:", error.response?.body || error.message);
     throw error;
@@ -172,7 +173,7 @@ app.post('/send-email', async (req, res) => {
 
         try {
             await send_to_me(data);
-            await send_to_customer(email)
+            await send_to_customer(data)
             console.log(`Verified! Email sent to ${email}`);
             return res.status(200).json({ success: true, message: "Confirmation email sent!" });
           } catch (error) {
