@@ -9,11 +9,12 @@ function RightContact() {
   const [message, setMessage] = useState("");
   const [errMessage, setErrMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
-
+  const [loading, setLoading] = useState(false)
   const server_link = "https://my-portfolio-2w8t.onrender.com";
   // const server_link = "http://localhost:4000";
 
   const sendHandler = async (e) => {
+    setLoading(true)
     e.preventDefault();
 
     setErrMessage("");
@@ -66,6 +67,7 @@ function RightContact() {
           "Something went wrong."
       );
     } finally {
+      setLoading(true)
       setTimeout(() => {
         setErrMessage("");
         setSuccessMessage("");
@@ -153,7 +155,7 @@ function RightContact() {
             type="submit"
             className="w-full h-12 rounded-lg border-b border-b-gray-600 bg-stone-900 active:outline-none text-neutral-300 hover:bg-indigo-950 focus-visible:outline-red-950 outline-none focus-visible:border-b-transparent duration-300"
           >
-            Send Message
+            {loading ? 'Sending...' : 'Send Message'}
           </button>
         </div>
 
