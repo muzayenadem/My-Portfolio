@@ -42,11 +42,13 @@ function RightContact() {
             setSuccess_message(response.message)
         } catch (error){
             setSuccess_message("")
-            setErrMessage(error.message)
+            setErrMessage(error.message)  
+        } finally{
             setTimeout(() => {
-            setErrMessage("")
+                setErrMessage("")
+                setSuccess_message("")
             }, 3000);
-        }  
+        }
     }
   return (
     <div className=' md:w-[65%]  py-10 gap-8 p-8 rounded-lg flex  flex-wrap-reverse md:flex-col shadow-lg shadow-black'>
@@ -55,7 +57,7 @@ function RightContact() {
           errMessage && <p className={`py-3 bg-neutral-900 shadow-lg shadow-slate-700 text-center animate-bounce ${errMessage == 'Your message has been sent successfully' ? 'text-green-500':' text-orange-700'} text-base mb-4 `}>{errMessage}</p>
         }
       <div className='flex justify-between flex-wrap gap-10'>
-        <div className=' md:w-[45%] flex justify-start items-start gap-3 flex-col'>
+        <div className=' md:w-[45%] flex justify-start items-star gap-3 flex-col'>
         <p className=' text-gray-400 text-xl'>YOUR NAME</p>
         <input
         onChange={(e)=> setName(e.target.value)}
