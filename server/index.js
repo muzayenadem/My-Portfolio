@@ -24,8 +24,8 @@ const send_to_me = async (data) => {
       to: [{ email: process.env.EMAIL}],
       htmlContent: `
         <h1>Welcome!</h1>
-        <h2>Name : {data.name}</h2>
-        <h3>Email : {data.email}</h3>
+        <h2>Name : ${data.name}</h2>
+        <h3>Email : ${data.email}</h3>
         <p>this message is contacted you with </p>
         <a href="https://dodola-official-website.vercel.app">Get started now!</a>
       `,
