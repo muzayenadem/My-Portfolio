@@ -35,6 +35,8 @@ const customer_html = (data) =>{
             <td style="padding: 40px 30px; text-align: center;">
               <!-- Icon/Logo Placeholder -->
               <div style="font-size: 48px; margin-bottom: 20px; line-height: 1;">✉️</div>
+
+              <strong>Muzeyan Adem</strong><br>Full-Stack Developer (MERN)<br>Backend & AI Developer
               
               <h1 style="color: #1f2937; font-size: 24px; font-weight: 700; margin: 0 0 12px 0; line-height: 1.3;">
                 Thank You for Reaching Out!
@@ -110,13 +112,16 @@ const send_to_me = async (data) => {
       subject: "New customer sent a message Successfully!",
       sender: { 
         email: process.env.EMAIL, 
-        name: `${data.name}. Customer`,
+        name: 'From My Portfolio,
       },
       to: [{ email: process.env.EMAIL}],
       htmlContent: `
         <h1>Welcome!</h1>
         <h2>Name : ${data.name}</h2>
         <h3>Email : ${data.email}</h3>
+        <h3>Phone : ${data.phone}</h3>
+        <h3>Subject : ${data.subject}</h3>
+        <h3>Message : ${data.message}</h3>
         <p>this message is contacted you with </p>
         <a href="https://dodola-official-website.vercel.app">Get started now!</a>
       `,
@@ -136,7 +141,7 @@ const send_to_customer = async(data)=> {
       subject: "Your message successfully reached us !",
       sender: { 
         email: process.env.EMAIL, 
-        name: "Muzeyan Adem. Fullstack developer " 
+        name: "Muzeyan Adem. | Portfolio " 
       },
       to: [{email: data.email}],
       htmlContent: customer_html(data),
