@@ -149,7 +149,7 @@ function RightContact() {
         </div>
       {errMessage && (
           <p
-            className={`py-3 bg-neutral-900 shadow-lg shadow-slate-700 text-center animate-bounce text-base mb-4 ${
+            className={`py-3 bg-neutral-900 shadow-lg shadow-slate-700 text-center animate-bounce text-base mt-4 ${
               errMessage === "Your message has been sent successfully"
                 ? "text-green-500"
                 : "text-orange-700"
