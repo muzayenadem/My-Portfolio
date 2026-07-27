@@ -82,18 +82,6 @@ function RightContact() {
         onSubmit={sendHandler}
         className="w-[96%] shadow-lg shadow-black p-4"
       >
-        {errMessage && (
-          <p
-            className={`py-3 bg-neutral-900 shadow-lg shadow-slate-700 text-center animate-bounce text-base mb-4 ${
-              errMessage === "Your message has been sent successfully"
-                ? "text-green-500"
-                : "text-orange-700"
-            }`}
-          >
-            {errMessage}
-          </p>
-        )}
-
         <div className="flex justify-between flex-wrap gap-10">
           <div className="md:w-[45%] flex justify-start items-start gap-3 flex-col">
             <p className="text-gray-400 text-xl">YOUR NAME</p>
@@ -159,7 +147,17 @@ function RightContact() {
             {loading ? 'Sending...' : 'Send Message'}
           </button>
         </div>
-
+      {errMessage && (
+          <p
+            className={`py-3 bg-neutral-900 shadow-lg shadow-slate-700 text-center animate-bounce text-base mb-4 ${
+              errMessage === "Your message has been sent successfully"
+                ? "text-green-500"
+                : "text-orange-700"
+            }`}
+          >
+            {errMessage}
+          </p>
+        )}
         {successMessage && (
           <p className="py-3 bg-neutral-300 shadow-lg shadow-slate-700 text-center animate-bounce text-green-500 text-base mt-4">
             {successMessage}
