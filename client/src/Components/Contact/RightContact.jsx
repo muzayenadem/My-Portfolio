@@ -14,7 +14,6 @@ function RightContact() {
   // const server_link = "http://localhost:4000";
 
   const sendHandler = async (e) => {
-    setLoading(true)
     e.preventDefault();
 
     setErrMessage("");
@@ -41,6 +40,7 @@ function RightContact() {
     }
 
     try {
+      setLoading(true)
       const response = await axios.post(`${server_link}/send-email`, {
         name,
         phone,
