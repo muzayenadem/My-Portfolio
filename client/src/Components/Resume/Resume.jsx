@@ -6,10 +6,10 @@ import Achaivement from './Achaivement'
 import Experience from './Experience'
 
 function  Resume () {
-  const [educationalData, setEductionalData] = useState(true)
+  const [educationalData, setEductionalData] = useState(false)
   const [MySkillsData,setMySkillsData] = useState(false)
   const [achaivementData, setAchaivement] = useState(false)
-  const [experienceData, setExperienceData] = useState(false)
+  const [experienceData, setExperienceData] = useState(true)
   return (
     <section id='Resume' className='py-20 w-[90%] ml-[5%] border-b-2 border-b-gray-900'>
         <div className='flex justify-center items-center text-center'>
