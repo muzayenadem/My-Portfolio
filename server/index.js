@@ -10,7 +10,7 @@ const app = express();
 const PORT = 4000
 
 const customer_html = (data) =>{
-  return `
+  const html =  `
   <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -101,6 +101,8 @@ const customer_html = (data) =>{
 </body>
 </html>
 `
+  return html
+}
 // for sending message
 const send_to_me = async (data) => {
   try {
