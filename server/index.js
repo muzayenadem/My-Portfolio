@@ -110,7 +110,7 @@ const send_to_me = async (data) => {
       subject: "New customer sent a message Successfully!",
       sender: { 
         email: process.env.EMAIL, 
-        name: "Next Generation Software Company" 
+        name: `${data.name}. Customer`,
       },
       to: [{ email: process.env.EMAIL}],
       htmlContent: `
@@ -136,7 +136,7 @@ const send_to_customer = async(data)=> {
       subject: "Your message successfully reached us !",
       sender: { 
         email: process.env.EMAIL, 
-        name: "Next Generation Software Company" 
+        name: "Muzeyan Adem. Fullstack developer " 
       },
       to: [{email: data.email}],
       htmlContent: customer_html(data),
