@@ -13,18 +13,20 @@ const PORT = 4000
 
 
 // for sending message
-const send_to_me = async (email) => {
+const send_to_me = async (data) => {
   try {
     await apiInstance.sendTransacEmail({
       subject: "New customer sent a message Successfully!",
       sender: { 
-        email: email, 
+        email: process.env.EMAIL, 
         name: "Next Generation Software Company" 
       },
       to: [{ email: process.env.EMAIL}],
       htmlContent: `
         <h1>Welcome!</h1>
-        <p>You've successfully subscribed to our service.</p>
+        <h2>`Name : ${data.name}`</h2>
+        <h3>`Email : ${data.email}</h3>
+        <p>this message is contacted you with </p>
         <a href="https://dodola-official-website.vercel.app">Get started now!</a>
       `,
       textContent: "Thanks for joining us!",
@@ -76,13 +78,15 @@ app.use(cors())
 app.post('/send-email', async (req, res) => {
     try {
         const { name, phone, email, subject, message } = req.body;
+        const data = {name,phone,email,subject,message}
+      
         console.log(email)
         const assure_email = assureEmail(email)
         if(!assure_email)
             return res.status(401).json({"error":"invalid email"})
 
         try {
-            await send_to_me(email);
+            await send_to_me(data);
             await send_to_customer(email)
             console.log(`Verified! Email sent to ${email}`);
             return res.status(200).json({ success: true, message: "Confirmation email sent!" });
