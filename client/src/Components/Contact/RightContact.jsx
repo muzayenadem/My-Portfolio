@@ -39,6 +39,7 @@ function RightContact() {
             if(!response?.success){
                 setErrMessage("something happend on server")
             }
+            console.log(response)
             setSuccess_message(response.message)
         } catch (error){
             setSuccess_message("")
