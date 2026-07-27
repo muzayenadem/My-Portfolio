@@ -7,6 +7,7 @@ function RightContact() {
     const [subject, setSubject] = useState("")
     const [Message, setMessage] = useState("")
     const [errMessage, setErrMessage] = useState('')
+    const [success_message, setSuccess_message] = useState("")
     const server_link = "https://my-portfolio-2w8t.onrender.com"
     //http://localhost:4000
     const sendHandler = async (e) =>{
@@ -35,7 +36,12 @@ function RightContact() {
         console.log(name,email,phone,subject, Message)
         try{
             const response = await axios.post(`${server_link}/send-email`,{name,phone,email,subject,Message})
+            if(!response?.success){
+                setErrMessage("something happend on server")
+            }
+            setSuccess_message(response.message)
         } catch (error){
+            setSuccess_message("")
             setErrMessage(error.message)
             setTimeout(() => {
             setErrMessage("")
@@ -87,10 +93,13 @@ function RightContact() {
         <div className='mt-3'>
         <button 
         onClick={sendHandler}
-        className=' w-full h-12  rounded-lg border-b-[1px] border-b-gray-600 bg-stone-900 active:outline-none text-neutral-300 hover:bg-indigo-950  focus-visible:outline-red-950 outline-none focus-visible:border-b-transparent duration-300                    '>Send Message</button>
+        className=' w-full h-12  rounded-lg border-b-[1px] border-b-gray-600 bg-stone-900 active:outline-none text-neutral-300 hover:bg-indigo-950  focus-visible:outline-red-950 outline-none focus-visible:border-b-transparent duration-300a'>Send Message</button>
         </div>
         {
           errMessage && <p className={`py-3 bg-neutral-900 shadow-lg shadow-slate-700 text-center animate-bounce ${errMessage == 'Your message has been sent successfully' ? 'text-green-500':' text-orange-700'} text-base mt-4 `}>{errMessage}</p>
+        }
+        {
+          success_message && <p className="py-3 bg-neutral-300 shadow-lg shadow-slate-700 text-center animate-bounce text-green-500 text-base mt-4 " >{success_message}</p>
         }
     </form>
   </div>
