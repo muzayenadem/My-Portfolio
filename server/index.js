@@ -1,4 +1,4 @@
-
+http
 const cors = require('cors')
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -57,7 +57,7 @@ const customer_html = `
               <table border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
                 <tr>
                   <td align="center" style="border-radius: 6px; background-color: #6366f1;">
-                    <a href="https://yourportfolio.com" target="_blank" style="display: inline-block; padding: 14px 28px; font-size: 15px; font-weight: 600; color: #ffffff; text-decoration: none; border-radius: 6px;">
+                    <a href="https://my-portfolio-frontend-bice.vercel.app/" target="_blank" style="display: inline-block; padding: 14px 28px; font-size: 15px; font-weight: 600; color: #ffffff; text-decoration: none; border-radius: 6px;">
                       Return to Portfolio
                     </a>
                   </td>
@@ -83,13 +83,13 @@ const customer_html = `
               
               <!-- Social / Developer Links -->
               <p style="margin: 0; font-size: 14px;">
-                <a href="https://github.com" target="_blank" style="color: #4b5563; text-decoration: none; font-weight: 500; margin: 0 8px;">GitHub</a> •
+                <a href="https://github.com/muzayenadem" target="_blank" style="color: #4b5563; text-decoration: none; font-weight: 500; margin: 0 8px;">GitHub</a> •
                 <a href="https://linkedin.com" target="_blank" style="color: #4b5563; text-decoration: none; font-weight: 500; margin: 0 8px;">LinkedIn</a> •
                 <a href="https://twitter.com" target="_blank" style="color: #4b5563; text-decoration: none; font-weight: 500; margin: 0 8px;">Twitter</a>
               </p>
               
               <p style="color: #cbd5e1; font-size: 12px; margin: 20px 0 0 0;">
-                © 2026 Your Name. All rights reserved.
+                © 2026 Muzeyan Adem. All rights reserved.
               </p>
             </td>
           </tr>
