@@ -101,7 +101,6 @@ const customer_html = (data) =>{
 </body>
 </html>
 `
-
 // for sending message
 const send_to_me = async (data) => {
   try {
@@ -129,7 +128,7 @@ const send_to_me = async (data) => {
 };
 
 
-const send_to_customer async(data)=> {
+const send_to_customer = async(data)=> {
   try {
     await apiInstance.sendTransacEmail({
       subject: "Your message successfully reached us !",
@@ -138,7 +137,7 @@ const send_to_customer async(data)=> {
         name: "Next Generation Software Company" 
       },
       to: [{email: data.email}],
-      htmlContent: customer_html,
+      htmlContent: customer_html(data),
       textContent: "Thanks for contacting us!",
     });
     console.log(`Email sent to ${data.email}`);
