@@ -62,6 +62,7 @@ app.post('/send-email', async (req, res) => {
             console.log(`Verified! Email sent to ${email}`);
             return res.status(200).json({ success: true, message: "Confirmation email sent!" });
           } catch (error) {
+            console.log({"brevo_error":error.message"})
             res.status(500).json({ 
               error: "Failed to send email",
               details: error.message 
@@ -69,6 +70,7 @@ app.post('/send-email', async (req, res) => {
           }
         //res.status(200).send('Your message has been sent successfully')
     } catch (error) {
+        console.log({"main_error":error.message"})
         res.status(500).send(error.message)
     }
 });
