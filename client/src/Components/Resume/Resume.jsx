@@ -15,7 +15,7 @@ function  Resume () {
         <div className='flex justify-center items-center text-center'>
        <Title title='6+ Years of exeperience' des='My Resume'/>
       </div>
-      <div >
+      <div>
         <ul className='w-full grid grid-cols-2 gap-1 md:grid-cols-4'>
           <li 
            onClick={()=>
@@ -24,13 +24,13 @@ function  Resume () {
             setExperienceData(false) &
             setMySkillsData(false)
            }
-           className={`resumeli ${ educationalData ? 'resumeli   rounded-lg':'noresumeli '} `}>Education</li>
-          <li  onClick={()=>
+           className={`resumeli ${educationalData ? 'resumeli   rounded-lg':'noresumeli '} `}>Education</li>
+          <li onClick={()=>
             setMySkillsData(true) &
             setEductionalData(false) &
             setAchaivement(false) &
             setExperienceData(false) 
-           } className={`${ MySkillsData ? ' resumeli  rounded-lg':'noresumeli'} resumeli`} > Skills</li>
+           } className={`${MySkillsData ? ' resumeli  rounded-lg':'noresumeli'} resumeli`} > Skills</li>
           <li 
            onClick={()=>
             setExperienceData(true) &
@@ -38,7 +38,7 @@ function  Resume () {
             setEductionalData(false) &
             setAchaivement(false) 
            }
-           className={`${ experienceData ? 'resumeli rounded-lg':'noresumeli'} resumeli`}>Experience</li>
+           className={`${experienceData ? 'resumeli rounded-lg':'noresumeli'} resumeli`}>Experience</li>
           <li
            onClick={()=>
             setAchaivement(true) &
@@ -46,7 +46,7 @@ function  Resume () {
             setEductionalData(false) &
             setMySkillsData(false)
            }
-           className={`${ achaivementData ? ' resumeli rounded-lg':'rounded-none noresumeli'} resumeli`}>Achaivment</li>
+           className={`${achaivementData ? ' resumeli rounded-lg':'rounded-none noresumeli'} resumeli`}>Achaivment</li>
         </ul>
       </div>
       {
