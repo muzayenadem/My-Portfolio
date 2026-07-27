@@ -19,6 +19,19 @@ const customer_html = (data) =>{
 <title>Thank You</title>
 </head>
 <body style="margin:0;background:#eef2ff;font-family:Arial,sans-serif;">
+
+
+<div style="text-align:center; margin-bottom:20px;">
+  <img
+    src="https://res.cloudinary.com/dtmtgaepv/image/upload/v1785163289/Contents_image/ksin6pxfcnjtruf2x8as.jpg"
+    alt="Muzeyan Adem Logo"
+    width="100"
+    style="display:block; margin:0 auto;"
+  >
+</div>
+
+
+
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="padding:40px 10px;background:#eef2ff;">
 <tr><td align="center">
 <table role="presentation" width="600" cellspacing="0" cellpadding="0" style="max-width:600px;background:#fff;border-radius:18px;overflow:hidden;">
