@@ -91,35 +91,133 @@ This is an automated confirmation email. No reply is required.<br><br>
 `
   return html
 }
+
+
+const portfolio_html = (data) =>{
+  html = `
+  <!DOCTYPE html>
+        <html>
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>New Contact Message</title>
+        </head>
+
+        <body style="font-family: Arial, sans-serif; background-color:#f4f6f8; padding:20px;">
+
+          <div style="
+            max-width:600px;
+            margin:auto;
+            background:white;
+            padding:30px;
+            border-radius:12px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.1);
+          ">
+
+            <h2 style="color:#2563eb; text-align:center;">
+              New Portfolio Contact Message
+            </h2>
+
+            <p style="font-size:16px; color:#444;">
+              You have received a new message from a visitor through your portfolio website.
+            </p>
+
+            <hr style="border:none; border-top:1px solid #ddd; margin:20px 0;">
+
+            <div style="line-height:1.8; color:#333;">
+              <p><strong>Name:</strong> ${data.name}</p>
+              <p><strong>Email:</strong> ${data.email}</p>
+              <p><strong>Phone:</strong> ${data.phone}</p>
+              <p><strong>Subject:</strong> ${data.subject}</p>
+              
+              <p><strong>Message:</strong></p>
+              <div style="
+                background:#f9fafb;
+                padding:15px;
+                border-left:4px solid #2563eb;
+                border-radius:6px;
+              ">
+                ${data.message}
+              </div>
+            </div>
+
+            <hr style="border:none; border-top:1px solid #ddd; margin:20px 0;">
+
+            <p style="font-size:14px; color:#666;">
+              This message was submitted through your personal portfolio website.
+            </p>
+
+            <a 
+              href="https://dodola-official-website.vercel.app"
+              style="
+                display:inline-block;
+                margin-top:15px;
+                padding:12px 20px;
+                background:#2563eb;
+                color:white;
+                text-decoration:none;
+                border-radius:6px;
+              "
+            >
+              Visit Portfolio
+            </a>
+
+            <p style="
+              margin-top:25px;
+              font-size:12px;
+              color:#999;
+              text-align:center;
+            ">
+              © ${new Date().getFullYear()} Muzeyan Adem. All rights reserved.
+            </p>
+          </div>
+        </body>
+        </html>
+    `
+
+  return html
+}
 // for sending message
+
 const send_to_me = async (data) => {
   try {
     await apiInstance.sendTransacEmail({
-      subject: "New customer sent a message Successfully!",
-      sender: { 
-        email: process.env.EMAIL, 
-        name: 'From My Portfolio',
+      subject: "New Contact Message Received - Portfolio",
+      sender: {
+        email: process.env.EMAIL,
+        name: "Portfolio Contact System",
       },
-      to: [{ email: process.env.EMAIL}],
-      htmlContent: `
-        <h1>Welcome!</h1>
-        <h2>Name : ${data.name}</h2>
-        <h3>Email : ${data.email}</h3>
-        <h3>Phone : ${data.phone}</h3>
-        <h3>Subject : ${data.subject}</h3>
-        <h3>Message : ${data.message}</h3>
-        <p>this message is contacted you with </p>
-        <a href="https://dodola-official-website.vercel.app">Get started now!</a>
+      to: [
+        {
+          email: process.env.EMAIL,
+          name: "Muzeyan Adem",
+        },
+      ],
+      htmlContent: portfolio_html(data),
+      textContent: `
+        New Portfolio Contact Message
+
+        Name: ${data.name}
+        Email: ${data.email}
+        Phone: ${data.phone}
+        Subject: ${data.subject}
+
+        Message:
+        ${data.message}
+
+        Sent from your portfolio website.
       `,
-      textContent: "Thanks for joining us!",
     });
-    console.log(`Email sent to ${process.env.EMAIL}`);
+
+    console.log(`Email sent successfully to ${process.env.EMAIL}`);
   } catch (error) {
-    console.error("Brevo Error:", error.response?.body || error.message);
+    console.error(
+      "Brevo Error:",
+      error.response?.body || error.message
+    );
     throw error;
   }
 };
-
 
 const send_to_customer = async(data)=> {
   try {
