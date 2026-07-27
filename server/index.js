@@ -170,7 +170,7 @@ app.post('/send-email', async (req, res) => {
         console.log(email)
         const assure_email = assureEmail(email)
         if(!assure_email)
-            return res.status(401).json({"error":"invalid email"})
+            return res.status(401).send({"error":"invalid email"})
 
         try {
             await send_to_me(data);
