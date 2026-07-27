@@ -13,21 +13,45 @@ const PORT = 4000
 
 
 // for sending message
-const sendWelcomeEmail = async (email) => {
+const send_to_me = async (email) => {
   try {
     await apiInstance.sendTransacEmail({
-      subject: "You've Joined Successfully!",
+      subject: "New customer sent a message Successfully!",
       sender: { 
         email: email, 
         name: "Next Generation Software Company" 
       },
-      to: [{ email: "muzynadem@gmail.com"}],
+      to: [{ email: process.env.EMAIL}],
       htmlContent: `
         <h1>Welcome!</h1>
         <p>You've successfully subscribed to our service.</p>
         <a href="https://dodola-official-website.vercel.app">Get started now!</a>
       `,
       textContent: "Thanks for joining us!",
+    });
+    console.log(`Email sent to ${process.env.EMAIL}`);
+  } catch (error) {
+    console.error("Brevo Error:", error.response?.body || error.message);
+    throw error;
+  }
+};
+
+
+const send_to_customer = async (email) => {
+  try {
+    await apiInstance.sendTransacEmail({
+      subject: "Your message successfully reached us !",
+      sender: { 
+        email: process.env.EMAIL, 
+        name: "Next Generation Software Company" 
+      },
+      to: [{email}],
+      htmlContent: `
+        <h1>Welcome!</h1>
+        <p>You've successfully contacted us </p>
+        <a href="https://dodola-official-website.vercel.app">Get started now!</a>
+      `,
+      textContent: "Thanks for contacting us!",
     });
     console.log(`Email sent to ${email}`);
   } catch (error) {
@@ -58,7 +82,8 @@ app.post('/send-email', async (req, res) => {
             return res.status(401).json({"error":"invalid email"})
 
         try {
-            await sendWelcomeEmail(email);
+            await send_to_me(email);
+            await send_to_customer(email)
             console.log(`Verified! Email sent to ${email}`);
             return res.status(200).json({ success: true, message: "Confirmation email sent!" });
           } catch (error) {
