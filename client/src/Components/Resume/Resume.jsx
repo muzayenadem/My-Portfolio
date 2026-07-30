@@ -13,7 +13,7 @@ function  Resume () {
   return (
     <section id='Resume' className='py-20 w-[90%] ml-[5%] border-b-2 border-b-gray-900'>
         <div className='flex justify-center items-center text-center'>
-       <Title title='6+ Years of exeperience' des='My Resume'/>
+       <Title title='3+ Years of exeperience' des='My Resume'/>
       </div>
       <div>
         <ul className='w-full grid grid-cols-2 gap-1 md:grid-cols-4'>
