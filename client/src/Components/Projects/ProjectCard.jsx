@@ -46,44 +46,44 @@ function ProjectCard() {
 export default ProjectCard
 
 const projects = [
-    {
-        title:'GoFind ',
-        des:"GoFind is the software that helps landlord manage their property and renter find house, apartment, and hotel ",
-        img:gofind,
+     {
+        title:'Property Management system,
+        des:"A MERN application that allows landlords to list properties and users to search rentals with interactive maps.",
+        img:img5,
         webLink:'https://gofind.vercel.app',
         gitgubLink:'https://github.com/muzayenadem/GoFind'
     },
     {
         title:'Dodola Official Website',
-        des:"Dodola Official website is the web that holds all essential thing those needs one smart city",
+        des:"A full-stack community website with an admin dashboard for managing news, events, announcements, and public content.",
         img:"https://res.cloudinary.com/dtmtgaepv/image/upload/v1785405245/News_Image/teiihrvmcp5eyupssx01.jpg",
         webLink:'https://dodola-official-websitq¡.vercel.app',
         gitgubLink:'https://github.com/muzayenadem/Ecommerce'
-    },
+    }, 
     {
-        title:'EzasCo Eccommercer',
-        des:"this eccommerce project helps people to buy the product and they can send each other message as a additional feuture",
-        img:img5,
+        title:'GoFind ',
+        des:"A location-based platform for discovering places and services with secure authentication and responsive design.",
+        img:gofind,
         webLink:'https://gofind.vercel.app',
         gitgubLink:'https://github.com/muzayenadem/GoFind'
     },
     {
-        title:'EzasCo Eccommercer',
-        des:"this eccommerce project helps people to buy the product and they can send each other message as a additional feuture",
+        title:'Personal Portfolio Website',
+        des:'A responsive portfolio showcasing my projects, skills, and experience with a functional contact form.',
         img:img4,
         webLink:'https://gofind.vercel.app',
         gitgubLink:'https://github.com/muzayenadem/GoFind'
     },
     {
-        title:'EzasCo Eccommercer',
-        des:"this eccommerce project helps people to buy the product and they can send each other message as a additional feuture",
+        title:"House Price Predictor",
+        des: "A machine learning model that predicts house prices using data preprocessing and neural network techniques",
         img:img5,
         webLink:'https://gofind.vercel.app',
         gitgubLink:'https://github.com/muzayenadem/GoFind'
     },
     {
-        title:'EzasCo Eccommercer',
-        des:"this eccommerce project helps people to buy the product and they can send each other message as a additional feuture",
+        title:'Diary Application',
+        des:"A modern diary application where users can write, organize, and manage personal notes securely.",
         img:img6,
         webLink:'https://gofind.vercel.app',
         gitgubLink:'https://github.com/muzayenadem/GoFind'
