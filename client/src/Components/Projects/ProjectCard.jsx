@@ -47,7 +47,7 @@ export default ProjectCard
 
 const projects = [
      {
-        title:'Property Management system,
+        title:'Property Management system',
         des:"A MERN application that allows landlords to list properties and users to search rentals with interactive maps.",
         img:img5,
         webLink:'https://gofind.vercel.app',
