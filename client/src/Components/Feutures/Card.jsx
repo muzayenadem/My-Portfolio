@@ -23,7 +23,7 @@ function Card() {
     <>
     {
         data.map(({title,des1,des2,icon},i) => {
-            return <div key={i} onMouseOver={()=>showHandler(i)} onMouseLeave={()=> hideHandler(i)} className='w-full  overflow-y-hidden  px-12 py-5 rounded-lg shadow-md shadow-gray-700 flex items-center bg-gradient-to-r from-neutral-900 to-stone-800
+            return <div key={i} onMouseOver={()=>showHandler(i)} onMouseLeave={()=> hideHandler(i)} className='w-full  overflow-y-hidden  px-4 py-5 rounded-lg shadow-md shadow-gray-700 flex items-center bg-gradient-to-r from-neutral-900 to-stone-800
             group hover:bg-gradient-to-t hover:from-black hover:to-slate-800 transition-colors duration-1000'>
              <div className='md:h-72 '>
                  <div className='flex flex-col gap-4 h-full md:mt-5 group-hover:mt-0 duration-500 transition-transform' >
