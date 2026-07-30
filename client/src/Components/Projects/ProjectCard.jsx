@@ -9,7 +9,7 @@ function ProjectCard() {
         projects.map(({title,des,img,webLink,githubLink},i) =>{
             return (
                 <div 
-                className='w-full  h-auto px-12 py-10 rounded-lg shadow-md shadow-gray-700 flex flex-col items-center bg-gradient-to-r from-neutral-900 to-stone-800
+                className='w-full  h-auto px-4 py-3 rounded-lg shadow-md shadow-gray-700 flex flex-col items-center bg-gradient-to-r from-neutral-900 to-stone-800
             group hover:bg-gradient-to-b hover:from-black hover:to-slate-800 transition-colors duration-1000'
                 key={i}>
                     <div className='w-full h-[80%] overflow-hidden rounded-lg'>
