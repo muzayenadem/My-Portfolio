@@ -49,7 +49,7 @@ const projects = [
      {
         title:'Property Management system',
         des:"A MERN application that allows landlords to list properties and users to search rentals with interactive maps.",
-        img:img5,
+        img:"https://res.cloudinary.com/dtmtgaepv/image/upload/v1785410365/News_Image/yjbmim2c5wlqegyyaxld.jpg",
         webLink:'https://gofind.vercel.app',
         githubLink:'https://github.com/muzayenadem/GoFind'
     },
