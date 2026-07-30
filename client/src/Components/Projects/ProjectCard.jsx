@@ -63,9 +63,9 @@ const projects = [
     {
         title:"House Price Predictor",
         des: "A machine learning model that predicts house prices using data preprocessing and neural network techniques",
-        img:img5,
-        webLink:'https://gofind.vercel.app',
-        githubLink:'https://github.com/muzayenadem/GoFind'
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRi81Y5lf9mJArGLu7grBvU0B9NDrAcmD6u7iceBvkuTNhxLyorYpQ-Lw&s=10",
+        webLink:'',
+        githubLink:'https://github.com/muzayenadem'
     },
     {
         title:'E-Commerce Demo',
@@ -78,14 +78,14 @@ const projects = [
         title:'Personal Portfolio Website',
         des:'A responsive portfolio showcasing my projects, skills, and experience with a functional contact form.',
         img:img4,
-        webLink:'https://gofind.vercel.app',
-        githubLink:'https://github.com/muzayenadem/GoFind'
+        webLink:'https://my-portfolio-frontend-bice.vercel.app/',
+        githubLink:'https://github.com/muzayenadem/My-Portfolio'
     },
     {
         title:'Diary Application',
         des:"A modern diary application where users can write, organize, and manage personal notes securely.",
         img:img6,
-        webLink:'https://gofind.vercel.app',
-        githubLink:'https://github.com/muzayenadem/GoFind'
+        webLink:'',
+        githubLink:'https://github.com/muzayenadem'
     },
 ]
