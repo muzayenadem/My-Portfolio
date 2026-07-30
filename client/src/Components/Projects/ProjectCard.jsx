@@ -77,7 +77,7 @@ const projects = [
     {
         title:'Personal Portfolio Website',
         des:'A responsive portfolio showcasing my projects, skills, and experience with a functional contact form.',
-        img:img4,
+        img:"https://res.cloudinary.com/dtmtgaepv/image/upload/v1785414616/News_Image/e97awx8oo9csbxi7ahrz.jpg",
         webLink:'https://my-portfolio-frontend-bice.vercel.app/',
         githubLink:'https://github.com/muzayenadem/My-Portfolio'
     },
