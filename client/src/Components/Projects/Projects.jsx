@@ -7,7 +7,7 @@ function Projects() {
       <div className='flex justify-center items-center text-center'>
       <Title title='Visit My Portfolio And Keep Feedback' des='My Projects'/>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         <ProjectCard/>
       </div>
     </section>
