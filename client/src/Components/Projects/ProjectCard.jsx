@@ -57,7 +57,7 @@ const projects = [
         title:'Dodola Official Website',
         des:"A full-stack community website with an admin dashboard for managing news, events, announcements, and public content.",
         img:"https://res.cloudinary.com/dtmtgaepv/image/upload/v1785405245/News_Image/teiihrvmcp5eyupssx01.jpg",
-        webLink:'https://dodola-official-websitq¡.vercel.app',
+        webLink:'https://dodola-official-website.vercel.app',
         githubLink:'https://github.com/muzayenadem/Ecommerce'
     }, 
     {
