@@ -56,7 +56,7 @@ const projects = [
     {
         title:'Dodola Official Website',
         des:"Dodola Official website is the web that holds all essential thing those needs one smart city",
-        img:ezasco,
+        img:"https://res.cloudinary.com/dtmtgaepv/image/upload/v1785405245/News_Image/teiihrvmcp5eyupssx01.jpg",
         webLink:'https://dodola-official-websitq¡.vercel.app',
         gitgubLink:'https://github.com/muzayenadem/Ecommerce'
     },
