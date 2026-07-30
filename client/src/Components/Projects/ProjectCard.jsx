@@ -61,8 +61,15 @@ const projects = [
         gitgubLink:'https://github.com/muzayenadem/Ecommerce'
     }, 
     {
-        title:'GoFind ',
-        des:"A location-based platform for discovering places and services with secure authentication and responsive design.",
+        title:"House Price Predictor",
+        des: "A machine learning model that predicts house prices using data preprocessing and neural network techniques",
+        img:img5,
+        webLink:'https://gofind.vercel.app',
+        gitgubLink:'https://github.com/muzayenadem/GoFind'
+    },
+    {
+        title:'E-Commerce Demo',
+        des:"A full-stack e-commerce application featuring product browsing, shopping cart, user authentication, and order management.",
         img:gofind,
         webLink:'https://gofind.vercel.app',
         gitgubLink:'https://github.com/muzayenadem/GoFind'
@@ -71,13 +78,6 @@ const projects = [
         title:'Personal Portfolio Website',
         des:'A responsive portfolio showcasing my projects, skills, and experience with a functional contact form.',
         img:img4,
-        webLink:'https://gofind.vercel.app',
-        gitgubLink:'https://github.com/muzayenadem/GoFind'
-    },
-    {
-        title:"House Price Predictor",
-        des: "A machine learning model that predicts house prices using data preprocessing and neural network techniques",
-        img:img5,
         webLink:'https://gofind.vercel.app',
         gitgubLink:'https://github.com/muzayenadem/GoFind'
     },
