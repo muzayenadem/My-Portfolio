@@ -71,8 +71,8 @@ const projects = [
         title:'E-Commerce Demo',
         des:"A full-stack e-commerce application featuring product browsing, shopping cart, user authentication, and order management.",
         img:gofind,
-        webLink:'https://gofind.vercel.app',
-        gitgubLink:'https://github.com/muzayenadem/GoFind'
+        webLink:"https://ecommerce-client-coral.vercel.app/",
+        githubLink:'https://github.com/muzayenadem/Ecommerce'
     },
     {
         title:'Personal Portfolio Website',
